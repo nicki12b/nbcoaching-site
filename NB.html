@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NB Coaching</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Добре дошли в NB Coaching</h1>
+    </header>
+    
+    <section id="about">
+        <h2>За мен</h2>
+        <div class="about-container">
+            <img src="profile.jpg" alt="Профилна снимка">
+            <div class="about-text">
+                <h3>Николай Б.</h3>
+                <p>Аз съм сертифициран фитнес треньор с дългогодишен опит в персонализираното обучение. 
+                Целта ми е да помогна на клиентите си да постигнат желаните резултати чрез индивидуални 
+                тренировъчни и хранителни планове.</p>
+                <button>Научи повече</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Свържете се с нас</h2>
+        <form action="send_email.php" method="post">
+            <label for="name">Име:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Имейл:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Съобщение:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Изпрати</button>
+        </form>
+    </section>
+    
+    <section id="survey">
+        <h2>Анкета</h2>
+        <form action="submit_survey.php" method="post">
+            <label>Как оценявате услугите ни?</label>
+            <select name="rating">
+                <option value="5">Отлично</option>
+                <option value="4">Много добро</option>
+                <option value="3">Добро</option>
+                <option value="2">Приемливо</option>
+                <option value="1">Лошо</option>
+            </select>
+            
+            <label for="feedback">Коментар:</label>
+            <textarea id="feedback" name="feedback"></textarea>
+            
+            <button type="submit">Изпрати</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 NB Coaching</p>
+    </footer>
+</body>
+</html>
